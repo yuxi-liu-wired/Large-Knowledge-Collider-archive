@@ -1,0 +1,20 @@
+<wsdl:description>
+
+	<!-- LarKC binding (do not change) -->
+	<wsdl:binding 
+		name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+	
+	<!-- LarKC endpoint interface -->
+	<wsdl:interface 
+		name="Endpoint"
+		sawsdl:modelReference="http://larkc.eu/endpoint#QueryEndpoint">
+	</wsdl:interface>
+	
+	<!-- Define service -->
+	<wsdl:service 
+		name="urn:eu.larkc.endpoint.query.QueryEndpoint" interface="Endpoint"
+		sawsdl:modelReference="http://larkc.eu/endpoint#QueryEndpoint" >
+		
+    	<wsdl:endpoint location="java:eu.larkc.endpoint.query.QueryEndpoint" />
+	</wsdl:service>
+</wsdl:description>

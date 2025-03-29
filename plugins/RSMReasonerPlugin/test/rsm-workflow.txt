@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+
+# Define the plug-in
+_:plugin a <urn:eu.larkc.plugin.reason.RSMReasoner.RSMReasonerPlugin> .
+
+
+
+# Define a path to set the input and output of the workflow 
+_:path a larkc:Path .
+_:path larkc:hasInput _:plugin . 
+_:path larkc:hasOutput _:plugin . 
+
+# Connect an endpoint to the path 
+<urn:eu.larkc.endpoint.sparql.ep1> a <urn:eu.larkc.endpoint.sparql> .
+<urn:eu.larkc.endpoint.sparql.ep1> larkc:links _:path .

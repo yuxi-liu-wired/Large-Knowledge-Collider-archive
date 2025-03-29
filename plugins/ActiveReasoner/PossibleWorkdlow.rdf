@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+
+# Define two plug-ins
+_:plugin1 a <urn:GoogleCalendarIdentifier> .
+_:plugin2 a <urn:eu.larkc.plugin.identify.TripItPlugin> .
+_:plugin3 a <urn:si.ijs.active.larkc.ActiveReasoner> .
+
+# Connect the plug-ins
+_:plugin1 larkc:connectsTo _:plugin3 .
+_:plugin2 larkc:connectsTo _:plugin3 .
+
+# Parameters
+_:param1 larkc:loginInfo "Karel Slava,karel.slava@gmail.com,19iMaPe1".
+_:param1 larkc:loginInfo "Mojca Cekin,mojca.cekin@gmail.com,19iMaPe1".
+_:param1 larkc:loginInfo "Ivo Zmaga,ivo.zmaga@gmail.com,19iMaPe1".
+
+_:plugin1 larkc:hasParameter _:param1 .	
+
+_:param2 larkc:loginInfo "Karel Slava,karel.slava@gmail.com,19iMaPe1".
+_:param2 larkc:loginInfo "Mojca Cekin,mojca.cekin@gmail.com,19iMaPe1".
+_:param2 larkc:loginInfo "Ivo Zmaga,ivo.zmaga@gmail.com,19iMaPe1".
+_:plugin2 larkc:hasParameter _:param2.
+
+# Define a path to set the input and output of the workflow
+_:path a larkc:Path .
+_:path larkc:hasInput _:plugin1 .
+_:path larkc:hasInput _:plugin2 .
+_:path larkc:hasInput _:plugin3 .
+_:path larkc:hasOutput _:plugin3 .
+
+# Connect an endpoint to the path
+_:ep a <urn:si.ijs.endpoint.active> .
+_:ep larkc:links _:path .

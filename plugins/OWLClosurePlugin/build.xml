@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+	<project name="OWLClosurePlugin" default="dist" xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+		<!--Please change this name accordingly-->
+		<property name="plugin.name" value="OWLClosurePlugin" />
+				
+		<property name="larkc" location="../../platform/plugins/${plugin.name}.larkc" />
+		<property name="platform" location="../../platform" />
+		
+		<property name="bin" location="bin" />
+		<property name="dist" location="dist" />
+		<property name="lib" location="lib" />
+		<property name="src" location="src" />
+
+		<artifact:pom id="mypom" file="${platform}/pom.xml" />
+
+		<target name="resolve.dependencies">
+			<artifact:dependencies pathId="maven.classpath" useScope="compile">
+		      <pom refid="mypom"/>
+		    </artifact:dependencies>
+		</target>
+
+	  <target name="init" depends="clean">
+	    <mkdir dir="${bin}"/>
+	    <mkdir dir="${dist}"/>
+	    <mkdir dir="${dist}/lib"/>	    	    
+	  </target>
+		
+		<path id="plugins.lib">
+			<fileset dir="${platform}">
+					<include name="target/platform-2.0.0-SNAPSHOT.jar" />
+			</fileset>
+			
+			<fileset dir="${lib}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+
+	  <target name="clean">
+			<delete dir="${bin}" />
+			<delete dir="${dist}" />
+			<delete file="${larkc}" />
+	  </target>
+
+	<target name="compile" depends="init,resolve.dependencies">
+		<copy todir="${dist}">
+			<fileset dir="${src}" />
+		</copy>
+		
+		<javac debug="on" srcdir="${dist}" classpathref="maven.classpath" destdir="${dist}">
+		<classpath refid="plugins.lib"/>	
+		</javac>
+	</target>
+	  
+	<target name="dist" depends="compile">
+		<copy todir="${dist}/lib">
+			<fileset dir="${lib}" />
+		</copy>
+		
+		<copy todir="${dist}">
+			<fileset dir="">
+				<include name="**/*.xml"/>
+				<include name="**/*.rdf"/>
+				<include name="**/*.wsdl"/>
+				<exclude name="**/build.xml*"/>
+			</fileset>
+		</copy>		
+		
+		<jar jarfile="${larkc}" basedir="${dist}" />
+		
+		<delete dir="${dist}" />
+	</target>
+</project>

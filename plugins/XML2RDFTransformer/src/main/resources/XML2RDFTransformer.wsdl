@@ -1,0 +1,20 @@
+<wsdl:description>
+
+	<!-- LarKC binding (do not change) -->
+	<wsdl:binding 
+		name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+	
+	<!-- LarKC plug-in interface -->
+	<wsdl:interface 
+		name="Plugin"
+		sawsdl:modelReference="http://larkc.eu/plugin#XML2RDFTransformer">
+	</wsdl:interface>
+	
+	<!-- Define service -->
+	<wsdl:service 
+		name="urn:eu.larkc.plugin.transform.urbancomputing.ubl.XML2RDFTransformer" interface="Plugin"
+		sawsdl:modelReference="http://larkc.eu/plugin#XML2RDFTransformer" >
+		
+    	<wsdl:endpoint location="java:eu.larkc.plugin.transform.urbancomputing.ubl.XML2RDFTransformer" />
+	</wsdl:service>
+</wsdl:description>

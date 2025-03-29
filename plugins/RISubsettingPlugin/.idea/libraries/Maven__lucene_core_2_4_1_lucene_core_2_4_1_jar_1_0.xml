@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Maven: lucene-core-2.4.1:lucene-core-2.4.1.jar:1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/lucene-core-2.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

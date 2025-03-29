@@ -1,0 +1,25 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gwas: <http://www.gate.ac.uk/gwas#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX krr: <http://www.cs.vu.nl/krr#>
+SELECT * WHERE {
+ gwas:x rdf:type gwas:Experiment .
+ gwas:x gwas:hasName "experiment1" .
+ gwas:x gwas:hasKeywordGroup gwas:g1 .
+ gwas:g1 gwas:hasKeyword "lung" .
+ gwas:g1 gwas:hasKeyword "cancer" .
+ gwas:x  gwas:searchInRif "false" .
+ gwas:x  gwas:useUMLS "false" .
+ gwas:x  gwas:searchMode "1" .  
+ gwas:x  gwas:dateConstraint "20110412" . 
+ gwas:x  gwas:hasSnpId "rs1051730" .
+ gwas:x  gwas:hasSnpId "rs8034191" .
+ gwas:x  gwas:hasSnpId "rs3117582" .
+ gwas:x  gwas:hasSnpId "rs4324798" .
+ gwas:x  gwas:hasSnpId "rs401681" .
+ krr:x  krr:sourceType "1" .
+ krr:x  krr:ontologyFile "http://wasp.cs.vu.nl/larkc/ontology/medical-ontology/meshonto.owl" .
+ krr:x  krr:threshold "6" .
+ krr:x  krr:substringMatch "true" .
+ krr:x  krr:semanticDistance "2" .
+ krr:x  krr:directSubclasses "false" }

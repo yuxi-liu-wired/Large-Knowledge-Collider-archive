@@ -1,0 +1,10 @@
+<wsdl:description>
+<wsdl:interface name="Plugin"
+        sawsdl:modelReference="http://larkc.eu/plugin">
+</wsdl:interface>
+<wsdl:binding name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+<wsdl:service name="urn:eu.larkc.plugin.sparqlkeyword.SASelecter" interface="Plugin"
+sawsdl:modelReference="http://larkc.eu/plugin#SASelecter" >
+    <wsdl:endpoint location="java:eu.larkc.plugin.sparqlkeyword.SASelecter" />
+</wsdl:service>
+</wsdl:description>

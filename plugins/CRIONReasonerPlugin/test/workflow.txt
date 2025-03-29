@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+
+# Define plug-ins
+_:myPlugin a <urn:eu.larkc.plugin.reason.CRIONReasoner.CRIONReasonerPlugin> .
+_:plugin2 a <urn:eu.larkc.plugin.SOStoVBtransformer> .
+
+_:myPlugin larkc:hasParameter _:pp2 .
+
+_:pp2 <urn:larkc.crionreasoner.datasource> "http://www.cs.vu.nl/~huang/larkc/ontology/mad_cows.owl" .
+
+# connect the plugins
+_:myPlugin larkc:connectsTo _:plugin2 .
+
+# Define a path to set the input and output of the workflow 
+_:path a larkc:Path .
+_:path larkc:hasInput _:myPlugin . 
+_:path larkc:hasOutput _:plugin2 . 
+
+# Connect an endpoint to the path 
+<urn:eu.larkc.endpoint.sparql.ep> a <urn:eu.larkc.endpoint.sparql> .
+<urn:eu.larkc.endpoint.sparql.ep> larkc:links _:path .

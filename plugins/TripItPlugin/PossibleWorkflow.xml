@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+@prefix credentials: <http://credentials#>.
+
+# Define two plug-ins
+_:plugin1 a <urn:eu.larkc.plugin.identify.TripItPlugin> .
+_:plugin1 larkc:hasParameter _:param1.
+_:param1 larkc:loginInfo "Luka,luka@cycorp.eu,19iMaPe1".
+
+
+# Define a path to set the input and output of the workflow
+_:path a larkc:Path .
+_:path larkc:hasInput _:plugin1 .
+_:path larkc:hasOutput _:plugin1 .
+
+# Connect an endpoint to the path
+<urn:myQueryendpoint> a <urn:eu.larkc.endpoint.sparql> .
+<urn:myQueryendpoint> larkc:links _:path .
+	
+
+
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:larkc="http://larkc.eu/schema#" xmlns:credentials="http://credentials#">
+	<rdf:Description rdf:nodeID="TripItPlugin">
+		<larkc:pluginType rdf:resource="urn:eu.larkc.plugin.identify.TripItPlugin"/>
+		<larkc:pluginParameters>
+			<rdf:Description>
+				<credentials:username> Your Tripit username </credentials:username>
+				<credentials:password> Your Tripit password </credentials:password>
+			</rdf:Description>
+		</larkc:pluginParameters>
+		<larkc:pluginSink rdf:nodeID="ExampleSink"/>
+	</rdf:Description>
+
+	 <!-- Source -->
+	 <rdf:Description rdf:nodeID="ExampleSource">
+		 <larkc:sourcePlugin rdf:nodeID="TripItPlugin"/>
+	 </rdf:Description>
+
+	 <!-- Sink -->
+	 <rdf:Description rdf:nodeID="ExampleSink"/>
+
+	 <!-- Pipe -->
+	 <rdf:Description rdf:nodeID="ExamplePipe">
+		<larkc:pipeHasSource rdf:nodeID="ExampleSource"/>
+		<larkc:pipeHasSink rdf:nodeID="ExampleSink"/>
+	 </rdf:Description>
+
+
+	 <rdf:Description rdf:nodeID="endpoint1">
+		    <larkc:endpointType rdf:resource="urn:eu.larkc.endpoint.sparql"/>
+		    <larkc:endpointConnectsToPipe rdf:nodeID="ExamplePipe"/>
+	</rdf:Description>
+</rdf:RDF>

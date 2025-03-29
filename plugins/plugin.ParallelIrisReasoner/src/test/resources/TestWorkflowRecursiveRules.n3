@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+
+# Define one plug-in
+_:irisPlugin a <urn:eu.larkc.plugin.pariris.ParallelIrisReasoner> .
+_:irisPlugin larkc:hasParameter _:pp1 .
+_:pp1 <urn:larkc.pariris.factbase> "/facts/recursive.nt" .
+_:pp1 <urn:larkc.pariris.rulebase> "/rules/recursive.xml" .
+
+# Define a path to set the input and output of the workflow 
+_:path a larkc:Path .
+_:path larkc:hasInput _:irisPlugin . 
+_:path larkc:hasOutput _:irisPlugin . 
+
+# Connect an endpoint to the path 
+<urn:eu.larkc.endpoint.query.ep1> a <urn:eu.larkc.endpoint.test.TestEndpoint> .
+<urn:eu.larkc.endpoint.query.ep1> larkc:links _:path .

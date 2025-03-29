@@ -1,0 +1,19 @@
+# Workflow Description
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+
+# Define plug-ins
+_:plugin1 a <urn:eu.larkc.plugin.LLDReasoner> .
+
+# Define a path to set the input and output of the workflow
+_:path a larkc:Path .
+_:path larkc:hasInput _:plugin1 .
+_:path larkc:hasOutput _:plugin1 .
+
+# Connect an endpoint to the path
+_:ep a <urn:eu.larkc.endpoint.sparql.SparqlEndpoint> .
+_:ep larkc:links _:path .
+
+
+# Test query
+#SELECT ?s ?p ?o WHERE { { ?s ?p ?o . ?s ?p 'asthma'} }

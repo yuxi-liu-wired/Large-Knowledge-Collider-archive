@@ -1,0 +1,15 @@
+<wsdl:description>
+	<!-- COMMON TO ALL Plugin -->
+	<wsdl:interface name="infosetTransformer"
+		sawsdl:modelReference="http://larkc.eu/plugin#InformationSetTransformer">
+	</wsdl:interface>
+	
+	<wsdl:binding name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+
+	<!-- SPECIFIC TO THIS Plugin -->
+    <wsdl:service name="urn:eu.larkc.plugin.transformer.SPARQLToTriplePatternQueryTransformer" interface="infosetTransformer"
+  	sawsdl:modelReference="http://larkc.eu/plugin#SPARQLToTriplePatternQueryTransformer" >
+	    <wsdl:endpoint location="java:eu.larkc.plugin.transform.SPARQLToTriplePatternQueryTransformer" />
+    </wsdl:service>
+
+</wsdl:description>

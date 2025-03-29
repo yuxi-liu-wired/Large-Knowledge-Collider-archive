@@ -1,0 +1,35 @@
+<assembly>
+   <id>KeyPhraseSelecter</id>
+   <formats>
+      <format>jar</format>
+   </formats>
+
+   <includeBaseDirectory>false</includeBaseDirectory>
+
+   <dependencySets>
+      <dependencySet>
+         <outputDirectory>/</outputDirectory>
+         <useProjectArtifact>true</useProjectArtifact>
+         <includes>
+            <include>*:${artifactId}</include>
+         </includes>
+         <unpack>true</unpack>
+         <unpackOptions>
+            <excludes>
+               <exclude>*.rdf</exclude>
+               <exclude>*.wsdl</exclude>
+            </excludes>
+         </unpackOptions>
+      </dependencySet>
+   </dependencySets>
+
+   <fileSets>
+      <fileSet>
+         <includes>
+            <include>KeyPhraseSelecter.*</include>
+         </includes>
+         <directory>src/main/resources</directory>
+         <outputDirectory>/</outputDirectory>
+      </fileSet>
+   </fileSets>
+</assembly>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>eu.larkc</groupId>
+	<artifactId>plugin.KeywordReasonerPlugin</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>KeywordReasonerPlugin</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- We are dependent on the LarKC platform -->
+	<dependencies>		
+		<dependency>
+			<groupId>eu.larkc</groupId>
+			<artifactId>platform</artifactId>
+			<version>2.5.0-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>nl.vu.few.krr.larkc.keywordreasoner</groupId>
+			<artifactId>VUAKeywordReasoner</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/VUAKeywordReasoner.jar</systemPath>
+		</dependency>			
+		
+		<!-- 
+		<dependency>
+		    <groupId>com.hp.hpl.jena</groupId>
+		    <artifactId>jena</artifactId>
+		    <version>2.6.4</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jgrapht</groupId>
+			<artifactId>jgrapht-jdk1.5</artifactId>
+			<version>0.7.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hp.hpl.jena</groupId>
+			<artifactId>arq</artifactId>
+			<version>2.8.7</version>
+			<scope>compile</scope>
+		</dependency> 	
+		
+	 -->		
+		
+		<dependency>
+		    <groupId>commons-io</groupId>
+   		 <artifactId>commons-io</artifactId>
+		    <version>2.0.1</version>
+		</dependency>	
+	
+		<!-- 
+		<dependency>
+			<groupId>org.semanticweb.owlapi</groupId>
+			<artifactId>owlapi-bin</artifactId>
+			<version>3.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/owlapi-bin.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.clarkparsia.pellet.owlapiv3</groupId>
+			<artifactId>pellet-owlapiv3</artifactId>
+			<version>3.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/pellet-owlapiv3.jar</systemPath>
+		</dependency>		
+		
+		<dependency>
+			<groupId>com.clarkparsia.pellet</groupId>
+			<artifactId>pellet-core</artifactId>
+			<version>2.2.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/pellet-core.jar</systemPath>
+		</dependency>	
+
+		<dependency>
+			<groupId>org.mindswap.pellet</groupId>
+			<artifactId>aterm-java-1.6</artifactId>
+			<version>1.6</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/aterm-java-1.6.jar</systemPath>
+		</dependency>		
+		
+		<dependency>
+			<groupId>com.clarkparsia.pellet.rules</groupId>
+			<artifactId>pellet-rules</artifactId>
+			<version>2.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/pellet-rules.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.clarkparsia.pellet.datatypes</groupId>
+			<artifactId>pellet-datatypes</artifactId>
+			<version>2.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/pellet-datatypes.jar</systemPath>
+		</dependency>		
+		
+		<dependency>
+			<groupId>com.clarkparsia.pellet.el</groupId>
+			<artifactId>pellet-el</artifactId>
+			<version>2.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/pellet-el.jar</systemPath>
+		</dependency>	
+		
+		-->	
+		
+		<!-- <dependency>
+			<groupId>com.hp.hpl.jena</groupId>
+			<artifactId>arq</artifactId>
+			<version>2.8.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/arq-2.8.7.jar</systemPath>
+		</dependency> -->			
+		
+	
+		
+		<!-- Declare any special libraries (which have to be put in /lib) here. -->
+		<!-- 
+		<dependency>
+			<groupId>your.external.library</groupId>
+			<artifactId>artifactid</artifactId>
+			<version>x.x.x</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/your-library.jar</systemPath>
+		</dependency>
+		-->
+	</dependencies>
+
+	<!-- Set the compiler version to 1.6 -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<descriptors>
+						<descriptor>LarkcPluginAssembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+			</plugin>
+			
+			<!-- Copy resources plug-in to copy the jar to the platform -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/../LarKC/plugins</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/target</directory>
+									<includes>
+										<include>*.jar</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

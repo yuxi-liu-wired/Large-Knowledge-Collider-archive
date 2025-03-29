@@ -1,0 +1,15 @@
+<wsdl:description>
+	<!-- COMMON TO ALL Plugin -->
+	<wsdl:interface name="selecter"
+		sawsdl:modelReference="http://larkc.eu/plugin#Selecter">
+	</wsdl:interface>
+	
+	<wsdl:binding name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+
+	<!-- SPECIFIC TO THIS Plugin -->
+    <wsdl:service name="urn:eu.larkc.plugin.selecter.GrowingDataSetSelecter" interface="selecter"
+  	sawsdl:modelReference="http://larkc.eu/plugin#GrowingDataSetSelecter" >
+	    <wsdl:endpoint location="java:eu.larkc.plugin.select.GrowingDataSetSelecter" />
+    </wsdl:service>
+
+</wsdl:description>

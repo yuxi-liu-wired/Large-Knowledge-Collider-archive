@@ -1,0 +1,13 @@
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wine:       <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#>
+PREFIX food:       <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>  
+PREFIX sparqldl: <http://pellet.owldl.com/ns/sdle#>
+SELECT ?X ?Y
+WHERE {
+wine:Bordeaux rdfs:subClassOf ?X.
+?X rdfs:subClassOf wine:Wine.
+?X rdfs:subClassOf ?Y.
+?Y rdf:type owl:Class.
+wine:Bordeaux rdf:type owl:Class.}

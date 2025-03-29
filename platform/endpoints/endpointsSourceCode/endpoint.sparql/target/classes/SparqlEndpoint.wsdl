@@ -1,0 +1,20 @@
+<wsdl:description>
+
+	<!-- LarKC binding (do not change) -->
+	<wsdl:binding 
+		name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+	
+	<!-- LarKC endpoint interface -->
+	<wsdl:interface 
+		name="Endpoint"
+		sawsdl:modelReference="http://larkc.eu/endpoint#SparqlEndpoint">
+	</wsdl:interface>
+	
+	<!-- Define service -->
+	<wsdl:service 
+		name="urn:eu.larkc.endpoint.sparql.SparqlEndpoint" interface="Endpoint"
+		sawsdl:modelReference="http://larkc.eu/endpoint#SparqlEndpoint" >
+		
+    	<wsdl:endpoint location="java:eu.larkc.endpoint.sparql.SparqlEndpoint" />
+	</wsdl:service>
+</wsdl:description>

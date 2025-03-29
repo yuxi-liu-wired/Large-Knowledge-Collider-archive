@@ -1,0 +1,43 @@
+<html>
+ <head>
+  <!-- We shouldn't need this file but the main LarKC interface is bust! -->
+  <title>LarKC GWAS Sample Interface</title>
+  <script>
+    function submitQueryFn() {
+      var sparqlText = document.getElementsByName("endpoint")[0];
+      var sform = document.getElementsByName("sparql-form")[0];
+      sform.action = sparqlText.value;
+      sform.submit();
+    }
+  </script>
+ </head>
+ <body>
+
+  <h1>Sample GWAS Query</h1>
+  Endpoint: <input name="endpoint" size="50" type="text" value="http://localhost:8183/sparql/" /><br>
+  <form name="sparql-form" onsubmit="submitQueryFn();" method="get">
+    <textarea name="query" rows="20" cols="120">PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gwas: <http://www.gate.ac.uk/gwas#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT * WHERE {
+ gwas:x rdf:type gwas:Experiment .
+ gwas:x gwas:hasName "experiment1" .
+ gwas:x gwas:hasKeywordGroup gwas:g1 .
+ gwas:g1 gwas:hasKeyword "lung" .
+ gwas:g1 gwas:hasKeyword "cancer" .
+ gwas:x gwas:searchInRif "false" .
+ gwas:x gwas:useUMLS "false" .
+ gwas:x gwas:searchMode "1" .  
+ gwas:x gwas:dateConstraint "20110412" . 
+ gwas:x gwas:hasSnpId "rs1051730" .
+ gwas:x gwas:hasSnpId "rs8034191" .
+ gwas:x gwas:hasSnpId "rs3117582" .
+ gwas:x gwas:hasSnpId "rs4324798" .
+ gwas:x gwas:hasSnpId "rs401681" .
+ gwas:x gwas:hasSnpId "rs2736100"
+}
+</textarea><br/>
+    <input type="submit" value="Submit" />
+  </form>
+ </body>
+</html>

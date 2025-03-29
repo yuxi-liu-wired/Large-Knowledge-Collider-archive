@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: RandomIndexingSubsetting:RandomIndexingSubsetting.jar:1.0">
+    <archive path="C:/Users/user/work/mpi/larkc/juniPlugins/larkc/trunk/plugins/RISubsettingPlugin/src/main/resources/lib/RandomIndexingSubsetting.jar" />
+  </library>
+  <library name="Maven: ch.qos.logback:logback-classic:0.9.24">
+    <archive path="C:/Users/user/.m2/repository/ch/qos/logback/logback-classic/0.9.24/logback-classic-0.9.24.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-sail-inferencer:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-sail-inferencer/2.3.2/sesame-sail-inferencer-2.3.2.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-i18n:1.3.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-i18n/1.3.0/aduna-commons-i18n-1.3.0.jar" />
+  </library>
+  <library name="Maven: eu.larkc:webpie:1.0">
+    <archive path="C:/Users/user/.m2/repository/eu/larkc/webpie/1.0/webpie-1.0.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-http-protocol:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-http-protocol/2.3.2/sesame-http-protocol-2.3.2.jar" />
+  </library>
+  <library name="Maven: sim:sim-instrumentation:1.0-SNAPSHOT">
+    <archive path="C:/Users/user/.m2/repository/sim/sim-instrumentation/1.0-SNAPSHOT/sim-instrumentation-1.0-SNAPSHOT.jar" />
+  </library>
+  <library name="Maven: lucene-core-2.4.1:lucene-core-2.4.1.jar:1.0">
+    <archive path="C:/Users/user/work/mpi/larkc/juniPlugins/larkc/trunk/plugins/RISubsettingPlugin/src/main/resources/lib/lucene-core-2.4.1.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-model:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-model/2.3.2/sesame-model-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-http:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-http/2.3.2/sesame-repository-http-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryalgebra-evaluation:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryalgebra-evaluation/2.3.2/sesame-queryalgebra-evaluation-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-n3:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-n3/2.3.2/sesame-rio-n3-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.apache.james:apache-mime4j:0.6">
+    <archive path="C:/Users/user/.m2/repository/org/apache/james/apache-mime4j/0.6/apache-mime4j-0.6.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-ntriples:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-ntriples/2.3.2/sesame-rio-ntriples-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-sail-rdbms:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-sail-rdbms/2.3.2/sesame-sail-rdbms-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-sail-memory:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-sail-memory/2.3.2/sesame-sail-memory-2.3.2.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-iteration:2.8.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-iteration/2.8.0/aduna-commons-iteration-2.8.0.jar" />
+  </library>
+  <library name="Maven: org.apache.lucene:lucene-core:3.0.0">
+    <archive path="C:/Users/user/.m2/repository/org/apache/lucene/lucene-core/3.0.0/lucene-core-3.0.0.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryresultio-binary:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryresultio-binary/2.3.2/sesame-queryresultio-binary-2.3.2.jar" />
+  </library>
+  <library name="Maven: commons-dbcp:commons-dbcp:1.2.2">
+    <archive path="C:/Users/user/.m2/repository/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.jar" />
+  </library>
+  <library name="Maven: org.apache.httpcomponents:httpmime:4.0.1">
+    <archive path="C:/Users/user/.m2/repository/org/apache/httpcomponents/httpmime/4.0.1/httpmime-4.0.1.jar" />
+  </library>
+  <library name="Maven: ch.qos.logback:logback-core:0.9.24">
+    <archive path="C:/Users/user/.m2/repository/ch/qos/logback/logback-core/0.9.24/logback-core-0.9.24.jar" />
+  </library>
+  <library name="Maven: org.slf4j:jcl-over-slf4j:1.6.1">
+    <archive path="C:/Users/user/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.1/jcl-over-slf4j-1.6.1.jar" />
+  </library>
+  <library name="Maven: nl.vu.cs.gridlab:gat.api:2.1.0">
+    <archive path="C:/Users/user/.m2/repository/nl/vu/cs/gridlab/gat.api/2.1.0/gat.api-2.1.0.jar" />
+  </library>
+  <library name="Maven: org.aspectj:aspectjrt:1.6.9">
+    <archive path="C:/Users/user/.m2/repository/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-lang:2.8.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-lang/2.8.0/aduna-commons-lang-2.8.0.jar" />
+  </library>
+  <library name="Maven: com.ontotext:swift.owlim:3.3">
+    <archive path="C:/Users/user/.m2/repository/com/ontotext/swift.owlim/3.3/swift.owlim-3.3.jar" />
+  </library>
+  <library name="Maven: Lucene2.4.1Demo:Lucene2.4.1Demo.jar:1.0">
+    <archive path="C:/Users/user/work/mpi/larkc/juniPlugins/larkc/trunk/plugins/RISubsettingPlugin/src/main/resources/lib/Lucene2.4.1Demo.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-dataset:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-dataset/2.3.2/sesame-repository-dataset-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryresultio-sparqljson:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryresultio-sparqljson/2.3.2/sesame-queryresultio-sparqljson-2.3.2.jar" />
+  </library>
+  <library name="Maven: commons-codec:commons-codec:1.3">
+    <archive path="C:/Users/user/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-xml:2.6.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-xml/2.6.0/aduna-commons-xml-2.6.0.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-concurrent:2.6.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-concurrent/2.6.0/aduna-commons-concurrent-2.6.0.jar" />
+  </library>
+  <library name="Maven: nl.vu.cs.gridlab:gat.engine:2.1.0">
+    <archive path="C:/Users/user/.m2/repository/nl/vu/cs/gridlab/gat.engine/2.1.0/gat.engine-2.1.0.jar" />
+  </library>
+  <library name="Maven: sim:sim-commons:1.0-SNAPSHOT">
+    <archive path="C:/Users/user/.m2/repository/sim/sim-commons/1.0-SNAPSHOT/sim-commons-1.0-SNAPSHOT.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-http-client:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-http-client/2.3.2/sesame-http-client-2.3.2.jar" />
+  </library>
+  <library name="Maven: com.ontotext:ordi.model:0.6">
+    <archive path="C:/Users/user/.m2/repository/com/ontotext/ordi.model/0.6/ordi.model-0.6.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-trix:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-trix/2.3.2/sesame-rio-trix-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryresultio-text:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryresultio-text/2.3.2/sesame-queryresultio-text-2.3.2.jar" />
+  </library>
+  <library name="Maven: com.ontotext:ordi.trree.adapter:0.6">
+    <archive path="C:/Users/user/.m2/repository/com/ontotext/ordi.trree.adapter/0.6/ordi.trree.adapter-0.6.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-api:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-api/2.3.2/sesame-rio-api-2.3.2.jar" />
+  </library>
+  <library name="Maven: com.ontotext:owlim.big:3.3.2237-20100706">
+    <archive path="C:/Users/user/.m2/repository/com/ontotext/owlim.big/3.3.2237-20100706/owlim.big-3.3.2237-20100706.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-trig:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-trig/2.3.2/sesame-rio-trig-2.3.2.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-net:2.6.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-net/2.6.0/aduna-commons-net-2.6.0.jar" />
+  </library>
+  <library name="Maven: org.apache.httpcomponents:httpcore:4.0.1">
+    <archive path="C:/Users/user/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-turtle:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-turtle/2.3.2/sesame-rio-turtle-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.apache.httpcomponents:httpclient:4.0.1">
+    <archive path="C:/Users/user/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar" />
+  </library>
+  <library name="Maven: eu.larkc:platform:2.5.0-SNAPSHOT">
+    <archive path="C:/Users/user/.m2/repository/eu/larkc/platform/2.5.0-SNAPSHOT/platform-2.5.0-SNAPSHOT.jar" />
+  </library>
+  <library name="Maven: org.restlet.jse:org.restlet:2.0.0">
+    <archive path="C:/Users/user/.m2/repository/org/restlet/jse/org.restlet/2.0.0/org.restlet-2.0.0.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryparser-api:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryparser-api/2.3.2/sesame-queryparser-api-2.3.2.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-text:2.6.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-text/2.6.0/aduna-commons-text-2.6.0.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-collections:2.7.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-collections/2.7.0/aduna-commons-collections-2.7.0.jar" />
+  </library>
+  <library name="Maven: sim:sim-instrumentation-larkc:1.0-SNAPSHOT">
+    <archive path="C:/Users/user/.m2/repository/sim/sim-instrumentation-larkc/1.0-SNAPSHOT/sim-instrumentation-larkc-1.0-SNAPSHOT.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-sail:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-sail/2.3.2/sesame-repository-sail-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-api:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-api/2.3.2/sesame-repository-api-2.3.2.jar" />
+  </library>
+  <library name="Maven: LarKC_Molecules:LarKC_Molecules.jar:1.0">
+    <archive path="C:/Users/user/work/mpi/larkc/juniPlugins/larkc/trunk/plugins/RISubsettingPlugin/src/main/resources/lib/LarKC_Molecules.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryalgebra-model:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryalgebra-model/2.3.2/sesame-queryalgebra-model-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-rio-rdfxml:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-rio-rdfxml/2.3.2/sesame-rio-rdfxml-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryparser-sparql:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryparser-sparql/2.3.2/sesame-queryparser-sparql-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.osgi:org.osgi.core:4.0.0">
+    <archive path="C:/Users/user/.m2/repository/org/osgi/org.osgi.core/4.0.0/org.osgi.core-4.0.0.jar" />
+  </library>
+  <library name="Maven: org.slf4j:log4j-over-slf4j:1.6.1">
+    <archive path="C:/Users/user/.m2/repository/org/slf4j/log4j-over-slf4j/1.6.1/log4j-over-slf4j-1.6.1.jar" />
+  </library>
+  <library name="Maven: commons-httpclient:commons-httpclient:3.1">
+    <archive path="C:/Users/user/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar" />
+  </library>
+  <library name="Maven: org.jgrapht:jgrapht-jdk1.5:0.7.3">
+    <archive path="C:/Users/user/.m2/repository/org/jgrapht/jgrapht-jdk1.5/0.7.3/jgrapht-jdk1.5-0.7.3.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-manager:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-manager/2.3.2/sesame-repository-manager-2.3.2.jar" />
+  </library>
+  <library name="Maven: commons-pool:commons-pool:1.3">
+    <archive path="C:/Users/user/.m2/repository/commons-pool/commons-pool/1.3/commons-pool-1.3.jar" />
+  </library>
+  <library name="Maven: semanticvectors-1.22:semanticvectors-1.22.jar:1.25">
+    <archive path="C:/Users/user/work/mpi/larkc/juniPlugins/larkc/trunk/plugins/RISubsettingPlugin/src/main/resources/lib/semanticvectors-1.22.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-contextaware:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-contextaware/2.3.2/sesame-repository-contextaware-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-repository-event:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-repository-event/2.3.2/sesame-repository-event-2.3.2.jar" />
+  </library>
+  <library name="Maven: junit:junit:4.8.2">
+    <archive path="C:/Users/user/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-sail-nativerdf:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-sail-nativerdf/2.3.2/sesame-sail-nativerdf-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.slf4j:slf4j-api:1.6.1">
+    <archive path="C:/Users/user/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-sail-api:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-sail-api/2.3.2/sesame-sail-api-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-runtime:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-runtime/2.3.2/sesame-runtime-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-query:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-query/2.3.2/sesame-query-2.3.2.jar" />
+  </library>
+  <library name="Maven: org.apache:hadoop.core:0.20.1">
+    <archive path="C:/Users/user/.m2/repository/org/apache/hadoop.core/0.20.1/hadoop.core-0.20.1.jar" />
+  </library>
+  <library name="Maven: org.apache.tomcat:tomcat-servlet-api:7.0.2">
+    <archive path="C:/Users/user/.m2/repository/org/apache/tomcat/tomcat-servlet-api/7.0.2/tomcat-servlet-api-7.0.2.jar" />
+  </library>
+  <library name="Maven: asm:asm-all:3.1">
+    <archive path="C:/Users/user/.m2/repository/asm/asm-all/3.1/asm-all-3.1.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryresultio-api:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryresultio-api/2.3.2/sesame-queryresultio-api-2.3.2.jar" />
+  </library>
+  <library name="Maven: info.aduna.commons:aduna-commons-io:2.8.0">
+    <archive path="C:/Users/user/.m2/repository/info/aduna/commons/aduna-commons-io/2.8.0/aduna-commons-io-2.8.0.jar" />
+  </library>
+  <library name="Maven: commons-io-1.4:commons-io-1.4.jar:1.4">
+    <archive path="C:/Users/user/work/mpi/larkc/juniPlugins/larkc/trunk/plugins/RISubsettingPlugin/src/main/resources/lib/commons-io-1.4.jar" />
+  </library>
+  <library name="Maven: com.ontotext:swift.trree:3.3">
+    <archive path="C:/Users/user/.m2/repository/com/ontotext/swift.trree/3.3/swift.trree-3.3.jar" />
+  </library>
+  <library name="Maven: org.openrdf.sesame:sesame-queryresultio-sparqlxml:2.3.2">
+    <archive path="C:/Users/user/.m2/repository/org/openrdf/sesame/sesame-queryresultio-sparqlxml/2.3.2/sesame-queryresultio-sparqlxml-2.3.2.jar" />
+  </library>
+</eclipse-userlibraries>
+

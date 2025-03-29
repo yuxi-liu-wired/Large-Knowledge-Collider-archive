@@ -1,0 +1,3 @@
+man('homer').
+woman('marge').
+hasSon('homer','bart').

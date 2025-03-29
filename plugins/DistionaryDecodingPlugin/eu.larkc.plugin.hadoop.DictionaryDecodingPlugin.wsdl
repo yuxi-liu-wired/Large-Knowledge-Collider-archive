@@ -1,0 +1,15 @@
+<wsdl:description>
+	<!-- COMMON TO ALL IDENTIFIERS -->
+	<wsdl:interface name="identifier"
+		sawsdl:modelReference="http://larkc.eu/plugin#Identifier">
+	</wsdl:interface>
+	
+	<wsdl:binding name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+
+	<!-- SPECIFIC TO THIS IDENTIFIER -->
+    <wsdl:service name="urn:eu.larkc.plugin.hadoop.DictionaryDecodingPlugin" interface="identifier"
+  	sawsdl:modelReference="http://larkc.eu/plugin#DictionaryDecodingPlugin" >
+	    <wsdl:endpoint location="java:eu.larkc.plugin.hadoop.DictionaryDecodingPlugin" />
+    </wsdl:service>
+
+</wsdl:description>

@@ -1,0 +1,3 @@
+isMale(?x) :- man(?x).
+isFemale(?x) :- woman(?x).
+isMale(?y) :- hasSon(?x,?y).

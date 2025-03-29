@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ontotext:owlim.big:3.3.2237-20100706">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ontotext/owlim.big/3.3.2237-20100706/owlim.big-3.3.2237-20100706.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ontotext/owlim.big/3.3.2237-20100706/owlim.big-3.3.2237-20100706-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ontotext/owlim.big/3.3.2237-20100706/owlim.big-3.3.2237-20100706-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: eu.larkc:platform:2.5.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.apache:hadoop.core:0.20.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: eu.larkc:webpie:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: nl.vu.cs.gridlab:gat.api:2.1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: nl.vu.cs.gridlab:gat.engine:2.1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-runtime:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-model:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-collections:2.7.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-concurrent:2.6.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.slf4j:slf4j-api:1.6.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-i18n:1.3.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-query:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-api:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-lang:2.8.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-net:2.6.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-text:2.6.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-iteration:2.8.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryalgebra-model:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryparser-api:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryparser-sparql:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryresultio-api:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryresultio-binary:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-io:2.8.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryresultio-sparqljson:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryresultio-sparqlxml:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: info.aduna.commons:aduna-commons-xml:2.6.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryresultio-text:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-api:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-manager:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-event:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-sail:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-sail-api:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-sail-memory:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-sail-inferencer:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-queryalgebra-evaluation:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-http:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-http-client:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-http-protocol:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-ntriples:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-httpclient:commons-httpclient:3.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-codec:commons-codec:1.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-dataset:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-repository-contextaware:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-n3:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-turtle:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-rdfxml:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-trix:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-rio-trig:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-sail-nativerdf:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.openrdf.sesame:sesame-sail-rdbms:2.3.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-dbcp:commons-dbcp:1.2.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-pool:commons-pool:1.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.restlet.jse:org.restlet:2.0.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.osgi:org.osgi.core:4.0.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: ch.qos.logback:logback-core:0.9.24"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: ch.qos.logback:logback-classic:0.9.24"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.apache.tomcat:tomcat-servlet-api:7.0.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.jgrapht:jgrapht-jdk1.5:0.7.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: junit:junit:4.8.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: asm:asm-all:3.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.apache.httpcomponents:httpclient:4.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.apache.httpcomponents:httpcore:4.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.apache.httpcomponents:httpmime:4.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.apache.james:apache-mime4j:0.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.slf4j:log4j-over-slf4j:1.6.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.ontotext:ordi.trree.adapter:0.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.ontotext:ordi.model:0.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.ontotext:swift.owlim:3.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.ontotext:swift.trree:3.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.ontotext:owlim.big:3.3.2237-20100706"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.slf4j:jcl-over-slf4j:1.6.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: sim:sim-instrumentation:1.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.aspectj:aspectjrt:1.6.9"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: sim:sim-commons:1.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: sim:sim-instrumentation-larkc:1.0-SNAPSHOT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-io-1.4:commons-io-1.4.jar:1.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: LarKC_Molecules:LarKC_Molecules.jar:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: semanticvectors-1.22:semanticvectors-1.22.jar:1.25"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: RandomIndexingSubsetting:RandomIndexingSubsetting.jar:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: lucene-core-2.4.1:lucene-core-2.4.1.jar:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: Lucene2.4.1Demo:Lucene2.4.1Demo.jar:1.0"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

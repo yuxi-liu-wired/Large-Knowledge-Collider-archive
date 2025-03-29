@@ -1,0 +1,2 @@
+<http://test/aaa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://test/xxx> .
+<http://test/uuu> <http://test/aaa> <http://test/vvv> .

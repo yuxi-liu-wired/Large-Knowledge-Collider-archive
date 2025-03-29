@@ -1,0 +1,15 @@
+person('B1').
+person('B2').
+person('A1').
+person('C3').
+
+hasName('B1', 'barry').
+hasName('B2', 'barry').
+hasName('A1', 'anne').
+hasName('C3', 'charlie').
+
+atOffsite('B1').
+atOffsite('A1').
+
+atEswc('B2').
+atEswc('C3').

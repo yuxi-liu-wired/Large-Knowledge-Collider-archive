@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Maven: semanticvectors-1.22:semanticvectors-1.22.jar:1.25">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/semanticvectors-1.22.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

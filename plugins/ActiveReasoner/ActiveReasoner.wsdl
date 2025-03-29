@@ -1,0 +1,11 @@
+<wsdl:description>
+<wsdl:interface name="Identifier"
+	sawsdl:modelReference="http://larkc.eu/plugin#Reasoner">
+</wsdl:interface>
+<wsdl:binding name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+<!-- SPECIFIC TO THIS PLUGIN_TYPE -->
+<wsdl:service name="urn:si.ijs.active.larkc.ActiveReasoner" interface="Reasoner"
+sawsdl:modelReference="http://larkc.eu/plugin#ActiveReasoner" >
+    <wsdl:endpoint location="java:si.ijs.active.larkc.ActiveReasoner" />
+</wsdl:service>
+</wsdl:description>

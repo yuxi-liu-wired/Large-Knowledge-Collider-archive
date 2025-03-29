@@ -1,0 +1,15 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix larkc: <http://larkc.eu/schema#> .
+
+_:plugin0 a <urn:eu.larkc.plugin.SOStoVBtransformer> .
+
+_:plugin1 a <urn:eu.larkc.plugin.sparqlkeyword.SASelecter> .
+_:plugin1 larkc:connectsTo _:plugin0 .
+
+<urn:eu.larkc.endpoint.sparql.ep1> a <urn:eu.larkc.endpoint.sparql> .
+<urn:eu.larkc.endpoint.sparql.ep1> larkc:links _:path .
+
+_:path a larkc:Path .
+_:path larkc:hasInput _:plugin1 .
+_:path larkc:hasOutput _:plugin0 .
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-catalog
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<archetypes>
+		<archetype>
+			<groupId>eu.larkc</groupId>
+			<artifactId>larkc-endpoint-archetype</artifactId>
+			<version>0.0.1</version>
+			<repository>http://maven.sti2.at/archiva/repository/external</repository>
+			<description>Creates an empty LarKC endpoint; useful if you want to
+				develop your own LarKC endpoints.</description>
+		</archetype>
+	</archetypes>
+
+</archetype-catalog>

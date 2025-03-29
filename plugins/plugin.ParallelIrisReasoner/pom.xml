@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>iris</artifactId>
+		<groupId>at.sti2.iris</groupId>
+		<version>0.7.2</version>
+	</parent>
+
+	<groupId>at.sti2.iris</groupId>
+	<artifactId>iris-impl-distributed</artifactId>
+	<name>IRIS Distributed Reference Implementation</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>conjars.org</id>
+			<url>http://conjars.org/repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+	
+		<!-- We are dependent on the LarKC platform -->
+		<dependency>
+			<groupId>eu.larkc</groupId>
+			<artifactId>platform</artifactId>
+			<version>2.5.0-SNAPSHOT</version>
+			<!--  You may need to adjust the platform version accordingly -->
+			<!--  <version>2.5.0</version> -->
+			<!--  <version>2.0.0-SNAPSHOT</version> -->
+			<scope>compile</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>log4j-over-slf4j</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<!-- Missing Jackson dependency -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		
+		<!-- Plug-in specific dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.iris</groupId>
+			<artifactId>iris-api</artifactId>
+			<version>0.8.1</version> <!-- was 0.7.2 -->
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.iris</groupId>
+			<artifactId>iris-parser</artifactId>
+			<version>0.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.iris</groupId>
+			<artifactId>iris-impl</artifactId>
+			<version>0.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-core</artifactId>
+			<version>1.2.3-wip-74</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-xml</artifactId>
+			<version>1.2.3-wip-74</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-test</artifactId>
+			<version>1.2.3-wip-74</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+
+
+		<!-- <dependency> -->
+		<!-- <groupId>cascading</groupId> -->
+		<!-- <artifactId>cascading-core</artifactId> -->
+		<!-- <version>1.2.0</version> -->
+		<!-- </dependency> -->
+		<!-- -->
+		<!-- <dependency> -->
+		<!-- <groupId>cascading</groupId> -->
+		<!-- <artifactId>cascading-xml</artifactId> -->
+		<!-- <version>1.2.0</version> -->
+		<!-- </dependency> -->
+		<!-- -->
+		<!-- <dependency> -->
+		<!-- <groupId>cascading</groupId> -->
+		<!-- <artifactId>cascading-test</artifactId> -->
+		<!-- <version>1.2.0</version> -->
+		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>org.semweb4j</groupId>
+			<artifactId>rdf2go.api</artifactId>
+			<version>4.7.3</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.semweb4j</groupId>
+			<artifactId>rdf2go.impl.sesame23</artifactId>
+			<version>4.7.3</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.rif4j</groupId>
+			<artifactId>rif4j-impl</artifactId>
+			<version>0.3.1</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.rif4j</groupId>
+			<artifactId>rif4j-impl</artifactId>
+			<version>0.3.1</version>
+			<scope>compile</scope>
+			<type>jar</type>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.rif4j</groupId>
+			<artifactId>rif4j-parser</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.rif4j</groupId>
+			<artifactId>rif4j-parser</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>compile</scope>
+			<type>jar</type>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.rif4j</groupId>
+			<artifactId>rif4j-iris</artifactId>
+			<version>0.3.1</version>
+			<scope>compile</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>at.sti2.rif4j</groupId>
+			<artifactId>rif4j-iris</artifactId>
+			<version>0.3.1</version>
+			<scope>compile</scope>
+			<type>jar</type>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-common</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<type>jar</type>
+			<version>0.21.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-common</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-mapred</groupId>
+			<artifactId>hadoop-mapred</artifactId>
+			<type>jar</type>
+			<version>0.21.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-mapred</groupId>
+			<artifactId>hadoop-mapred</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-mapred-test</groupId>
+			<artifactId>hadoop-mapred-test</artifactId>
+			<type>jar</type>
+			<version>0.21.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-hdfs</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-hdfs</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-hdfs-test</groupId>
+			<artifactId>hadoop-hdfs-test</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-hdfs-test</groupId>
+			<artifactId>hadoop-hdfs-test</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>hadoop-common-test</groupId>
+			<artifactId>hadoop-common-test</artifactId>
+			<version>0.21.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.3.3</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-asl</artifactId>
+			<version>0.9.5</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.3.3</version>
+			<type>jar</type>
+			<classifier>sources</classifier>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf</groupId>
+			<artifactId>openrdf-sesame</artifactId>
+			<version>2.3.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-runtime-osgi</artifactId>
+			<version>2.3.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jgrapht</groupId>
+			<artifactId>jgrapht-jdk1.5</artifactId>
+			<version>0.7.3</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jgrapht</groupId>
+			<artifactId>jgrapht-jdk1.5</artifactId>
+			<version>0.7.3</version>
+			<type>jar</type>
+			<classifier>sources</classifier>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-cli</groupId>
+			<artifactId>commons-cli</artifactId>
+			<version>1.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.4</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>xmlenc</groupId>
+			<artifactId>xmlenc</artifactId>
+			<version>0.52</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<version>1.1.5-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<skipTests>false</skipTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<descriptors>
+						<descriptor>src/assemble/hadoop-application.xml</descriptor>
+						<descriptor>src/assemble/LarkcPluginAssembly.xml</descriptor>
+					</descriptors>
+					<archive>
+						<manifest>
+							<mainClass>eu.larkc.iris.Main</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry combineaccessrules="false" kind="src" path="/platform"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/platform/target/platform-2.0.0-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

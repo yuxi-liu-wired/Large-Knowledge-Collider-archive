@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:larkc="http://larkc.eu/schema#" xmlns:credentials="http://credentials#">
+	<rdf:Description rdf:nodeID="GoogleCalendarIdentifier">
+		<larkc:pluginType rdf:resource="urn:GoogleCalendarIdentifier"/>
+		<larkc:pluginParameters>
+			<rdf:Description>
+				<larkc:loginInfo>Karel Slava,karel.slava@gmail.com,demopwd</larkc:loginInfo>
+				<larkc:loginInfo>Mojca Cekin,mojca.cekin@gmail.com,demopwd</larkc:loginInfo>
+				<larkc:loginInfo>Ivo Zmaga,ivo.zmaga@gmail.com,demopwd</larkc:loginInfo>
+			</rdf:Description>
+		</larkc:pluginParameters>
+		<larkc:pluginConnectsTo rdf:nodeID="ActiveReasoner" />
+	</rdf:Description>
+
+	<rdf:Description rdf:nodeID="TripItPlugin">
+		<larkc:pluginType rdf:resource="urn:eu.larkc.plugin.identify.TripItPlugin"/>
+		<larkc:pluginParameters>
+			<rdf:Description>
+				<credentials:username> luka@cycorp.eu </credentials:username>
+				<credentials:password> 19iMaPe1 </credentials:password>
+			</rdf:Description>
+		</larkc:pluginParameters>
+		<larkc:pluginConnectsTo rdf:nodeID="ActiveReasoner" />
+	</rdf:Description>
+	
+	<rdf:Description rdf:nodeID="ActiveReasoner">
+		<larkc:pluginType rdf:resource="urn:si.ijs.active.larkc.ActiveReasoner"/>
+		<larkc:pluginParameters>
+			<rdf:Description>
+				<credentials:username> luka@cycorp.eu </credentials:username>
+				<credentials:password> 19iMaPe1 </credentials:password>
+			</rdf:Description>
+		</larkc:pluginParameters>
+	</rdf:Description>
+	
+	<!-- path -->
+	<rdf:Description rdf:nodeID="ExamplePath">
+		 <larkc:hasInput rdf:nodeID="GoogleCalendarIdentifier"/>
+		 <larkc:hasInput rdf:nodeID="TripItPlugin"/>
+		 <larkc:hasOutput rdf:nodeID="GoogleCalendarIdentifier"/>
+	 </rdf:Description>
+	 
+
+	 <rdf:Description rdf:nodeID="endpoint1">
+		    <larkc:endpointType rdf:resource="urn:eu.larkc.endpoint.sparql"/>
+		    <larkc:endpointConnectsToPipe rdf:nodeID="ExamplePipe"/>
+		    <larkc:links rdf:nodeID="ExamplePath"/>
+	</rdf:Description>
+</rdf:RDF>

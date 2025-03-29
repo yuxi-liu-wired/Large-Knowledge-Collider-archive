@@ -1,0 +1,20 @@
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cyc:<http://example.com/cyc#>
+PREFIX tripit:<http://example.com/TripitPlugin/tripit#> 
+SELECT *
+WHERE
+{ ?P rdf:type cyc:Travel-RoundTrip } 
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cyc:<http://example.com/cyc#>
+PREFIX tripit:<http://example.com/TripitPlugin/tripit#> 
+PREFIX time:<http://www.w3.org/2006/time#>
+SELECT ?TIME ?Q ?P
+WHERE
+{ ?P rdf:type cyc:Travel-RoundTrip. 
+  ?P cyc:subEvents ?Q.
+  ?Q time:hasBeginning ?T.
+  ?T time:Instant ?TIME.
+} 
+

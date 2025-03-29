@@ -1,0 +1,20 @@
+<wsdl:description>
+
+	<!-- LarKC binding (do not change) -->
+	<wsdl:binding 
+		name="larkcbinding" type="http://larkc.eu/wsdl-binding" />
+	
+	<!-- LarKC plug-in interface -->
+	<wsdl:interface 
+		name="Plugin"
+		sawsdl:modelReference="http://larkc.eu/plugin#DataCleaner">
+	</wsdl:interface>
+	
+	<!-- Define service -->
+	<wsdl:service 
+		name="urn:eu.larkc.plugin.datacleaner.DataCleaner" interface="Plugin"
+		sawsdl:modelReference="http://larkc.eu/plugin#DataCleaner" >
+		
+    	<wsdl:endpoint location="java:eu.larkc.plugin.datacleaner.DataCleaner" />
+	</wsdl:service>
+</wsdl:description>
